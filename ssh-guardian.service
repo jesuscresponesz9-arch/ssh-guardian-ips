@@ -1,0 +1,13 @@
+[Unit]
+Description=SSH Guardian IPS Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /usr/local/bin/ssh_guardian.py
+Restart=always
+RestartSec=5
+User=root
+
+[Install]
+WantedBy=multi-user.target
