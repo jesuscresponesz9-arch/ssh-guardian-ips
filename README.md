@@ -99,3 +99,8 @@ sudo iptables -D INPUT [LINE_NUMBER]
 * **Volatilidad:** Las reglas de Iptables se pierden tras un reinicio a menos que se utilice `iptables-persistent`.
 * **IPv6:** La versión actual está optimizada para el stack IPv4. Se recomienda expandir a `ip6tables` en entornos dual-stack.
 * **Logs:** El sistema depende de la disponibilidad de `auth.log`. Si el servicio `rsyslog` se detiene, el IPS queda cegado.
+
+## 📊 Evidencias Operacionales
+![Detección de Intrusos](Detección%20de%20intruso)
+![Estado del Sistema](Estado%20del%20Servicio)
+![Firewall Activo](Reglas%20de%20Firewall)
